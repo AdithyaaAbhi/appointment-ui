@@ -3,13 +3,6 @@ A full-stack appointment scheduling system built for the BirdChime full-stack de
 
 This system allows users to view available time slots, schedule appointments, manage bookings, cancel appointments, and view all saved appointments.
 
----
-
-##  Live Demo  
-🔗 **Frontend:** _https://your-frontend-url.vercel.app_  
-🔗 **Backend API:** _https://your-backend-url.onrender.com_
-
----
 
 ## Features
 
