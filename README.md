@@ -80,9 +80,6 @@ Copy code
 ## **1. Get all appointments**
 GET /api/appointments
 
-css
-Copy code
-Response:
 ```json
 [
   {
@@ -96,17 +93,11 @@ Response:
   }
 ]
 2. Get available slots
-bash
-Copy code
 GET /api/appointments/available?date=2025-11-30
 3. Create appointment
-bash
-Copy code
 POST /api/appointments
 Body:
 
-json
-Copy code
 {
   "name": "John",
   "email": "john@gmail.com",
@@ -116,50 +107,35 @@ Copy code
   "time": "09:00 AM"
 }
 4. Delete appointment
-bash
-Copy code
 DELETE /api/appointments/:id
 Local Setup Instructions
 1. Clone Repo
-bash
-Copy code
 git clone https://github.com/AdithyaaAbhi/appointment-system.git
 2. Backend Setup
-bash
-Copy code
 cd backend
 npm install
 Create .env file:
 
-ini
-Copy code
 MONGO_URI=your-mongodb-url
 PORT=5000
 Start backend:
 
 powershell
-Copy code
 npm start
 3. Frontend Setup
 powershell
-Copy code
+
 cd frontend
 npm install
 npm start
 Frontend will start at:
 
-arduino
-Copy code
 http://localhost:3000
 Backend will run at:
 
-arduino
-Copy code
 http://localhost:5000
 Deployment
 Frontend (Vercel)
-arduino
-Copy code
 npm run build
 Upload /build folder or connect GitHub repo → deploy automatically.
 
@@ -200,8 +176,6 @@ Automated tests (Jest / Supertest)
 Adithya — Full Stack Developer
 (React + Node + MongoDB)
 
-yaml
-Copy code
 
 ---
 
@@ -210,17 +184,3 @@ Just paste this README into:
 
 appointment-system/README.md
 
-yaml
-Copy code
-
-or the repo root.
-
----
-
-If you want, I can also:
-
- Write a professional email for your submission  
- Help you deploy backend/frontend step-by-step  
- Create a short video script explaining your project  
-
-Just say **"Next"** 
