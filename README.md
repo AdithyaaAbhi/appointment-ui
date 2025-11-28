@@ -176,11 +176,3 @@ Automated tests (Jest / Supertest)
 Adithya — Full Stack Developer
 (React + Node + MongoDB)
 
-
----
-
-#  You're ready for deployment + submission!
-Just paste this README into:
-
-appointment-system/README.md
-
