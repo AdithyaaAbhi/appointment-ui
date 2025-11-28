@@ -77,10 +77,8 @@ Copy code
 
 # API Documentation
 
-## **1. Get all appointments**
 GET /api/appointments
 
-```json
 [
   {
     "_id": "123",
@@ -92,11 +90,16 @@ GET /api/appointments
     "time": "12:30 PM"
   }
 ]
-2. Get available slots
+
+Get Available Slots
+
 GET /api/appointments/available?date=2025-11-30
-3. Create appointment
+
+
+Create Appointment
+
 POST /api/appointments
-Body:
+
 
 {
   "name": "John",
@@ -106,73 +109,78 @@ Body:
   "date": "2025-11-29",
   "time": "09:00 AM"
 }
-4. Delete appointment
+
+Delete Appointment
+
 DELETE /api/appointments/:id
+
+
 Local Setup Instructions
 1. Clone Repo
+
 git clone https://github.com/AdithyaaAbhi/appointment-system.git
-2. Backend Setup
+
+
+Backend Setup
+
 cd backend
 npm install
-Create .env file:
+
+
+Create .env file inside backend folder:
 
 MONGO_URI=your-mongodb-url
 PORT=5000
+
+
 Start backend:
 
-powershell
 npm start
-3. Frontend Setup
-powershell
+
+
+Backend URL:
+
+http://localhost:5000
+
+
+Frontend Setup
 
 cd frontend
 npm install
 npm start
-Frontend will start at:
+
 
 http://localhost:3000
-Backend will run at:
 
-http://localhost:5000
-Deployment
-Frontend (Vercel)
-npm run build
-Upload /build folder or connect GitHub repo → deploy automatically.
 
-Backend (Render)
-Create new Web Service
+Assumptions
 
-Add environment variable MONGO_URI
-
-Build command: npm install
-
-Start command: node server.js
-
- Assumptions
-Only one appointment allowed per time slot
+One appointment allowed per time slot
 
 Business hours: 9 AM – 5 PM
 
 Weekdays only (Mon–Fri)
 
-Only future bookings allowed
+Only future dates allowed
 
- Future Improvements
+🔮 Future Improvements
+
 Email reminders
 
 SMS notifications
 
-Authentication (Admin panel)
+Admin authentication
 
 Calendar monthly view
 
-Drag/drop scheduling
+Drag & drop scheduling
 
 Appointment rescheduling
 
 Automated tests (Jest / Supertest)
-
  Author
+
 Adithya — Full Stack Developer
 (React + Node + MongoDB)
+
 
